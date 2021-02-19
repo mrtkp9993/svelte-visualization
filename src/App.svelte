@@ -35,6 +35,9 @@
       <Col><Error msg={'Data cannot be loaded.'}/></Col>
     {/await}
     </Row>
+    <Row>
+      <Col>Data is fetched from USGS: https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&minmagnitude=5</Col>
+    </Row>
   </div>
 </MaterialApp>
 

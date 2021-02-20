@@ -25,12 +25,12 @@
     <span slot="title">USGS Earthquakes</span>
   </AppBar>
   <div class="container">
-    <Row class="center" style="height: {innerHeight * 0.8}px">
+    <Row class="center" noGutters style="height: {innerHeight * 0.8}px">
     {#await promise}
       <Col><Info msg={'Data is loading...'}/></Col>
     {:then data}
-      <Col><Table {data}/></Col>
-      <Col><Graph {data}/></Col>
+      <Col class="pa-2"><Table {data}/></Col>
+      <Col class="pa-2"><Graph {data}/></Col>
     {:catch error}
       <Col><Error msg={'Data cannot be loaded.'}/></Col>
     {/await}
